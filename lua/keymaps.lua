@@ -53,8 +53,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
 vim.keymap.set({ 'n', 'v' }, '<tab>', '%', { desc = 'Jump to matching bracket' })
-vim.keymap.set('n', 'H', '^', { desc = 'Jump to start' })
-vim.keymap.set('n', 'L', '$', { desc = 'Jump to end' })
+vim.keymap.set({ 'n', 'v' }, 'H', '^', { desc = 'Jump to start' })
+vim.keymap.set({ 'n', 'v' }, 'L', '$', { desc = 'Jump to end' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
