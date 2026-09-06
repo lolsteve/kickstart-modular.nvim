@@ -105,7 +105,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  -- pyright = {},
+  pyright = {},
   -- tsc = {},
   --
   -- Some languages (like rust) have entire language plugins that can be useful:
@@ -113,6 +113,7 @@ local servers = {
   --
   -- But for many setups, the LSP (`rust_analyzer`) will work just fine
   -- rust_analyzer = {},
+  ts_ls = {},
 
   stylua = {}, -- Used to format Lua code
 
