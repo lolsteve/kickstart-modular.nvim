@@ -5,6 +5,10 @@ on:
     branches:
       - master
   pull_request:
+    # Ignore fork-sync PRs (they come from master and merge within seconds,
+    # before the pull_request run can start — leaving startup-failure noise)
+    branches-ignore:
+      - master
 
 jobs:
   stylua-check:
